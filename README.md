@@ -47,7 +47,8 @@ We extract the categorical and numerical data from dataset into two different pa
 
 ![image016](https://user-images.githubusercontent.com/73081215/146788954-fa914a98-83de-4e89-8d70-e094afd5d3ec.png)
 
-Through the below code, we box plot the categorical data
+Through the below code, we box plot the categorical data<br/>
+
 ![image018](https://user-images.githubusercontent.com/73081215/146789066-8e8886cc-8242-4d7d-b35d-72e06f0b6e1a.png)
 ![image019](https://user-images.githubusercontent.com/73081215/146789074-873ffb5e-a46d-4e70-8a7f-a5a1816e2998.png)
 ![image020](https://user-images.githubusercontent.com/73081215/146789085-aecfdd9a-ce70-4393-a53a-849f928ee6b7.png)
@@ -108,8 +109,8 @@ Using ridge or lasso resoult in a little better outcome in terms of MAE:
 ![image038](https://user-images.githubusercontent.com/73081215/146790806-b7d19143-b1c3-4429-a0c3-052cafb578a9.jpg)
 
 We try different regulation and normalization terms as the parameters.
-![image041](https://user-images.githubusercontent.com/73081215/146790917-d8dde341-ce29-4c31-8673-c034394b2182.png)
 
+![image039](https://user-images.githubusercontent.com/73081215/146792619-bebfc46c-7ddb-47dc-b5ef-611c6b0dd661.png)
 
 
 With KNeighborsRegressor we receive:
@@ -117,10 +118,11 @@ With KNeighborsRegressor we receive:
 ![image041](https://user-images.githubusercontent.com/73081215/146791147-72ca371c-38c3-4d0e-801d-ac15b94643f8.png)
 
 
+
 But it seems the best results are from Random Forrest Regressor. The MAE is about 3, which in comparison to the values that the target can achieve is reasonable. Besides, there is now a huge gap between Train and test, so we do not encounter overfitting.
 ![image042](https://user-images.githubusercontent.com/73081215/146791076-ff609c8f-34cd-47bc-b494-7554c3120ca4.png)
 
-**Unfortunately, the SVM required too much computational time, and it was not possible to use it with the present Hardware.
+**Unfortunately**, the SVM required too much computational time, and it was not possible to use it with the present Hardware.
 
 
 Finally, Adaboost does not show better result in terms of MAE, so our final decision would we RandomForrestRegressor
